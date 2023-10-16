@@ -12,6 +12,7 @@ const convertData = async () => {
         size: car["Vehicle Size"],
         style: car["Vehicle Style"],
         price: parseInt(car.MSRP),
+        release_date: car.Year,
         isDeleted: false,
     }));
     data = newData;
