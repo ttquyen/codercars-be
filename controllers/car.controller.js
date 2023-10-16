@@ -42,7 +42,7 @@ carController.getCars = async (req, res, next) => {
         res.status(200).send({
             cars: listOfFound,
             total: totalPage,
-            page: page,
+            page: page.toString(),
             message: "Get Car List Successfully!",
         });
     } catch (err) {
